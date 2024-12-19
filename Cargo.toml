@@ -19,7 +19,7 @@ is-it-maintained-open-issues = { repository = "lettre/lettre" }
 maintenance = { status = "actively-developed" }
 
 [dependencies]
-chumsky = "0.9"
+chumsky = { version = "0.9", default-features = false, features = ["std"] }
 idna = "1"
 tracing = { version = "0.1.16", default-features = false, features = ["std"], optional = true } # feature
 
